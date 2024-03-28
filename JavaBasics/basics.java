@@ -1,3 +1,5 @@
+package JavaBasics;
+
 // What is Java?
 
 // Ans => Java is a high-level, object-oriented programming language developed
@@ -55,4 +57,17 @@
 
 // ================================================================================================================
 
+// first program in java
 
+// public class basics {
+//     public static void main(String[] args) {
+//         int a = 20;
+//         if (a == 19) {
+//             System.out.println("Hello World");
+//         }else{
+//             System.out.println("no world");
+//         }
+
+//     }
+// }
+// OUTPUT: no world
