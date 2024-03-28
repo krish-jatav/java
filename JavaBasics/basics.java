@@ -39,17 +39,20 @@
 
 // ==================================================================================================
 
-
-//QUE => What is the difference between JDK, JRE, and JVM?
+// QUE => What is the difference between JDK, JRE, and JVM?
 
 // Ans=>
 
 // JDK (Java Development Kit) is used for Java development and includes tools
 // needed for compiling,
 // debugging, and running Java programs.
-// JRE (Java Runtime Environment) is used for running Java applications and includes the JVM and core
+// JRE (Java Runtime Environment) is used for running Java applications and
+// includes the JVM and core
 // libraries but lacks development tools.
-// JVM JVM (Java Virtual Machine) is an abstract computing machine responsible for executing Java bytecode
+// JVM JVM (Java Virtual Machine) is an abstract computing machine responsible
+// for executing Java bytecode
 // on various platforms, providing platform independence for Java programs.
 
 // ================================================================================================================
+
+
