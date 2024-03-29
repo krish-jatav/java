@@ -60,31 +60,65 @@ package JavaBasics;
 // first program in java
 
 // public class basics {
-//     public static void main(String[] args) {
-//         int a = 20;
-//         if (a == 19) {
-//             System.out.println("Hello World");
-//         }else{
-//             System.out.println("no world");
-//         }
+// public static void main(String[] args) {
+// int a = 20;
+// if (a == 19) {
+// System.out.println("Hello World");
+// }else{
+// System.out.println("no world");
+// }
 
-//     }
+// }
 // }
 // OUTPUT: no world
 
 // Print a pattern
 
-// public class  basics{
-//     public static void main(String[] args) {
-//         System.out.println("*");
-//         System.out.println("**");
-//         System.out.println("***");
-//         System.out.println("****");
+// public class basics{
+// public static void main(String[] args) {
+// System.out.println("*");
+// System.out.println("**");
+// System.out.println("***");
+// System.out.println("****");
 
-//     }
+// }
 // }
 // OUTPUT :
 // *
 // **
 // ***
 // ****
+
+// Varibles in java
+
+// In Java, a variable is a named memory location that stores data.
+// Variables are used to hold values that can be manipulated and
+// accessed within a program.
+
+// Declaration--
+// int age ; // Declares a variable named 'age' of type int
+// Initialization--
+// int age = 25; // Declares and initializes 'age' to 25
+
+// Types: Java is a statically-typed language, which means every variable must
+// have a specific data type. Common data types in Java include { int, double,
+// boolean, char, }and reference types like String.
+
+// program---
+
+// public class basics{
+// public static void main(String[]args){
+
+// Declaring and initializing variables
+// int num1 =10;
+// int num2=15;
+// int sum;
+
+// Performing arithmetic operation
+// sum = num1 + num2;
+
+// Displaying the result
+// System.out.println("sum of " + num1 +" and " + num2 + " is: "+sum);
+// }
+// }
+// OUTPUT : sum of 10 and 15 is: 25
