@@ -122,3 +122,8 @@ package JavaBasics;
 // }
 // }
 // OUTPUT : sum of 10 and 15 is: 25
+
+// Datatypes--------------------------
+
+// In Java, data types define the type of data that can be stored in a variable.
+// Java supports two categories of data types: primitive data types and reference data types...
