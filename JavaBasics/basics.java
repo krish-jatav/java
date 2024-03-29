@@ -71,3 +71,20 @@ package JavaBasics;
 //     }
 // }
 // OUTPUT: no world
+
+// Print a pattern
+
+// public class  basics{
+//     public static void main(String[] args) {
+//         System.out.println("*");
+//         System.out.println("**");
+//         System.out.println("***");
+//         System.out.println("****");
+
+//     }
+// }
+// OUTPUT :
+// *
+// **
+// ***
+// ****
