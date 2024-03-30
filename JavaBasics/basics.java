@@ -123,7 +123,21 @@ package JavaBasics;
 // }
 // OUTPUT : sum of 10 and 15 is: 25
 
-// Datatypes--------------------------
+// Data Types in Java-----
 
-// In Java, data types define the type of data that can be stored in a variable.
-// Java supports two categories of data types: primitive data types and reference data types...
+// Data types specify the different sizes and values that can be stored in the variable.
+// There are two types of data types in Java:
+
+// Primitive data types: The primitive data types include boolean, char, byte, short, int, long, float and double.
+// Non-primitive data types: The non-primitive data types include Classes, Interfaces, and Arrays.
+// tree structure for dataTypes https://media.geeksforgeeks.org/wp-content/uploads/20240307140133/data-types.png
+
+//1. boolean data type
+//2. byte data type
+//3. char data type
+//4. short data type
+//5. int data type
+//6. long data type
+//7. float data type
+//8. double data type
+
