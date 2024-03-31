@@ -125,40 +125,52 @@ package JavaBasics;
 
 // Data Types in Java-----
 
-// Data types specify the different sizes and values that can be stored in the variable.
+// Data types specify the different sizes and values that can be stored in the
+// variable.
 // There are two types of data types in Java:
 
-// Primitive data types: The primitive data types include boolean, char, byte, short, int, long, float and double.
-// Non-primitive data types: The non-primitive data types include Classes, Interfaces, and Arrays.
-// tree structure for dataTypes https://media.geeksforgeeks.org/wp-content/uploads/20240307140133/data-types.png
+// Primitive data types: The primitive data types include boolean, char, byte,
+// short, int, long, float and double.
+// Non-primitive data types: The non-primitive data types include Classes,
+// Interfaces, and Arrays.
+// tree structure for dataTypes
+// https://media.geeksforgeeks.org/wp-content/uploads/20240307140133/data-types.png
 
-//1. boolean data type
-//2. byte data type
-//3. char data type
-//4. short data type
-//5. int data type
-//6. long data type
-//7. float data type
-//8. double data type
+// 1. boolean data type
+// 2. byte data type
+// 3. char data type
+// 4. short data type
+// 5. int data type
+// 6. long data type
+// 7. float data type
+// 8. double data type
 
 // public class basics {
 
-//     public static void main(String[] args) {
-//         int i = 10;
-//         System.out.println(i);
-//         byte b = 1;
-//         System.out.println(b);
-//         char c = 'a';
-//         System.out.println(c);
-//         short s = 2;
-//         System.out.println(s);
-//         boolean bo = 1==3;
-//         System.out.println(bo);
-//         long l = 173561168;
-//         System.out.println(l);
-//         float f = 125;
-//         System.out.println(f);
-//         double d =1234.1234;
-//          System.out.println(d);
-//     }
+// public static void main(String[] args) {
+// int i = 10;
+// System.out.println(i);
+// byte b = 1;
+// System.out.println(b);
+// char c = 'a';
+// System.out.println(c);
+// short s = 2;
+// System.out.println(s);
+// boolean bo = 1==3;
+// System.out.println(bo);
+// long l = 173561168;
+// System.out.println(l);
+// float f = 125;
+// System.out.println(f);
+// double d =1234.1234;
+// System.out.println(d);
 // }
+// }
+// 2.Non-primitive datatype(the datatype which are created by ourselves are
+// known as the non primitive datatype)
+// They are:-
+// String.
+// Array.
+// Class.
+// Object.
+// Interface.
