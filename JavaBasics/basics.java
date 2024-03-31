@@ -174,3 +174,16 @@ package JavaBasics;
 // Class.
 // Object.
 // Interface.
+
+// sum of = a+b;
+public class basics {
+
+    public static void main(String[] args){
+        int a = 20;
+        int b= 20;
+        int sum = a+b;
+        System.out.println(sum);
+    }
+}
+
+
