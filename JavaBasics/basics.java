@@ -1,4 +1,5 @@
 package JavaBasics;
+import java.util.Scanner;
 
 // What is Java?
 
@@ -176,14 +177,29 @@ package JavaBasics;
 // Interface.
 
 // sum of = a+b;
+// public class basics {
+
+//     public static void main(String[] args) {
+//         int a = 20;
+//         int b = 20;
+//         int sum = a + b;
+//         System.out.println(sum);
+//     }
+// }
+
+// Sum of a+b by taking input from user.
+
 public class basics {
 
-    public static void main(String[] args){
-        int a = 20;
-        int b= 20;
-        int sum = a+b;
-        System.out.println(sum);
+    public static void main(String[] args) {
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("value of a");
+            int a =  sc.nextInt();
+            System.out.println("value of b");
+            int b =  sc.nextInt();
+            int sum = a+b;
+            System.out.println("sum of a and b = " +sum);
+        }
+
     }
 }
-
-
