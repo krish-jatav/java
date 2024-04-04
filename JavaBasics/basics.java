@@ -210,8 +210,8 @@ public class basics {
         Scanner sc = new Scanner(System.in);
         int a = 2;
         int b = 10;
-        int into = a * b;
-        System.out.println(into);
+        int multiply = a * b;
+        System.out.println(multiply);
 
     }
 }
