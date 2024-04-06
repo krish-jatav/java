@@ -205,13 +205,29 @@ import java.util.Scanner;
 //     }
 // }
 
+// public class basics {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int a = 2;
+//         int b = 10;
+//         int multiply = a * b;
+//         System.out.println(multiply);
+
+//     }
+// }
+
+// Area of circle
+
+
 public class basics {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int a = 2;
-        int b = 10;
-        int multiply = a * b;
-        System.out.println(multiply);
-
+        System.out.println("Enter The Radius");
+        int radius = sc.nextInt();
+        double area = 3.14 * radius * radius;
+        System.out.println(area);
     }
 }
+
+
+
