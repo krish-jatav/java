@@ -219,15 +219,31 @@ import java.util.Scanner;
 // Area of circle
 
 
-public class basics {
-    public static void main(String[] args) {
+// public class basics {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter The Radius");
+//         int radius = sc.nextInt();
+//         double area = 3.14 * radius * radius;
+//         System.out.println(area);
+//     }
+// }
+
+// In a program,input the side of a square.You have to output the area of the square.
+
+public class basics{
+    public static void main(String[]args){
+        System.out.println("Enter Area ");
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter The Radius");
-        int radius = sc.nextInt();
-        double area = 3.14 * radius * radius;
+        int sideOfsqr =sc.nextInt();
+        int area = sideOfsqr*sideOfsqr;
         System.out.println(area);
+
     }
 }
+
+
+
 
 
 
