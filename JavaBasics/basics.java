@@ -244,21 +244,28 @@ import java.util.Scanner;
 
 // Enter cost of 3 items from the user (using float datatype)-a Mongo ,a Banana and an Orange . You have to output the total cost of the items back to the user as their bill.
 
-public class basics {
-    public static void main(String[] args) {
-        System.out.println("Enter a cost of Mango");
-        Scanner sc = new Scanner(System.in);
-        float pencil = sc.nextFloat();
-        System.out.println("Enter a cost of Banana");
-        float pen = sc.nextFloat();
-        System.out.println("Enter a cost of Orange");
-        float eraser = sc.nextFloat();
-        float total = pencil+pen+eraser;
-        System.out.println("the total cost of Furits : " + total);
+// public class basics {
+//     public static void main(String[] args) {
+//         System.out.println("Enter a cost of Mango");
+//         Scanner sc = new Scanner(System.in);
+//         float pencil = sc.nextFloat();
+//         System.out.println("Enter a cost of Banana");
+//         float pen = sc.nextFloat();
+//         System.out.println("Enter a cost of Orange");
+//         float eraser = sc.nextFloat();
+//         float total = pencil+pen+eraser;
+//         System.out.println("the total cost of Furits : " + total);
 
-    }
+//     }
 
-}
+// }
+
+//Conditionals
+/*1.if else
+2.else if
+3.ternary operator.
+4.switch
+*/
 
 
 
