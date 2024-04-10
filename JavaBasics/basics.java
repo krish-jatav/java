@@ -274,6 +274,25 @@ import java.util.Scanner;
 // and another block of code if the condition is false.
 // Here's the syntax:
 
+// if (condition) {
+//     // code to be executed if the condition is true
+// } else {
+//     // code to be executed if the condition is false
+// }
+
+public class basics{
+    public static void main(String[] args) {
+        int age = 20;
+        // agar age 18 se grater than hai to print kardo your are an adult
+      if (age >= 18) {
+        System.out.println("You are an adult.");
+     } else {
+        System.out.println("You are not an adult.");
+     }
+
+    }
+}
+
 
 
 
