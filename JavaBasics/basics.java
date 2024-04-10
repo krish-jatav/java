@@ -267,6 +267,14 @@ import java.util.Scanner;
 4.switch
 */
 
+// 1. if else
+
+// the if-else statement is used for decision making.
+// It allows you to execute a block of code if a certain condition is true,
+// and another block of code if the condition is false.
+// Here's the syntax:
+
+
 
 
 
