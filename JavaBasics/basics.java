@@ -218,7 +218,6 @@ import java.util.Scanner;
 
 // Area of circle
 
-
 // public class basics {
 //     public static void main(String[] args) {
 //         Scanner sc = new Scanner(System.in);
@@ -293,20 +292,27 @@ import java.util.Scanner;
 //     }
 // }
 
+// public class basics {
+//   public static void main(String[] args) {
+//     int a =20;
+//     int b= 10;
+//     if(a >= b){
+//      System.out.println("a is big");
+//     }else{
+//       System.out.println("b is big  ");
+//     }
+//   }
+// }
+
 public class basics {
   public static void main(String[] args) {
-    int a =20;
-    int b= 10;
-    if(a >= b){
-     System.out.println("a is big");
-    }else{
-      System.out.println("b is big  ");
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter a Number if Check Odd and Even");
+    int n = sc.nextInt();
+    if (n % 2 == 0) {
+      System.out.println(+n + ", is Even Number");
+    } else {
+      System.out.println(+n + " is  Odd Number");
     }
   }
 }
-
-
-
-
-
-
