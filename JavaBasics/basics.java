@@ -324,7 +324,7 @@ public class basics {
     int Age = sc.nextInt();
     if (Age>=18){
       System.out.println("You are Adult ");
-    }else if(Age >= 13 && Age >= 7 ){
+    }else if(Age >= 13 && Age >= 17 ){
       System.out.println("You are Teenager.");
     }else{
       System.out.println("You are Not Adult and Not Teenager");
