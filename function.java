@@ -79,3 +79,20 @@ import java.util.Scanner;
 //     }
 // }
 
+// find the product
+
+public class function {
+
+    public static int multiply (int a , int b){
+
+        int product =a *b;
+        return product;
+    }
+    public static void main(String[] args) {
+        int a = 2;
+        int b= 4;
+        int prod = multiply(a, b);
+        System.out.println(prod);
+    }
+}
+
