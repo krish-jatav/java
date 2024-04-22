@@ -14,25 +14,41 @@ import java.util.Scanner;
 
 // Write a program that takes a input from the user and verify that this number is even or odd.
 
+// public class function {
+
+//     static Scanner sc = new Scanner(System.in);
+//     static long n = sc.nextInt();
+
+//     public static void verifying() {
+//         if (n % 2 == 0) {
+//             System.out.println("even");
+//         } else {
+//             System.out.println("odd");
+//         }
+
+//         return;
+
+//     }
+
+//     public static void main(String[] args) {
+
+//         verifying();
+//     }
+
+// }
+
+//write a program to print the sum of numbers by taking the input from the user.
+
 public class function {
 
-    static Scanner sc = new Scanner(System.in);
-    static long n = sc.nextInt();
-
-    public static void verifying() {
-        if (n % 2 == 0) {
-            System.out.println("even");
-        } else {
-            System.out.println("odd");
-        }
-
-        return;
-
+    public static void calculate(int num1, int num2) {
+        int sum = num1 + num2;
+        System.out.println("The sum is = " + sum );
     }
-
     public static void main(String[] args) {
-
-        verifying();
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b= sc.nextInt();
+        calculate(a, b);
     }
-
 }
