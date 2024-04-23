@@ -99,25 +99,42 @@ import java.util.Scanner;
 //Find the Factorial of the number
 // n!=n*(n-1)*(n-2)*(n-3).....1.
 
+// public class function {
+
+//     public static int Factorial(int n){
+//         int facto = 1;
+//         for (int i = 1; i <= n; i++ ){
+//             facto = facto*i;
+//         }
+//         return facto;
+//     }
+//     public static int Binomialcoefficient(int n, int r) {
+//         int a= Factorial(n);
+//         int b = Factorial(r);
+//         int c = Factorial(n-r);
+//         int BC =a / (b * c);
+
+//         return BC;
+
+//     }
+//     public static void main(String[] args) {
+//         System.out.println(Binomialcoefficient(3,2));
+//     }
+// }
+
+// FUNCTION OVERLOADING using parameters
+// it means multiple functions have same name but different parameters.
 public class function {
 
-    public static int Factorial(int n){
-        int facto = 1;
-        for (int i = 1; i <= n; i++ ){
-            facto = facto*i;
-        }
-        return facto;
+    public static int sum(int a, int b) {
+        return a + b;
     }
-    public static int Binomialcoefficient(int n, int r) {
-        int a= Factorial(n);
-        int b = Factorial(r);
-        int c = Factorial(n-r);
-        int BC =a / (b * c);
 
-        return BC;
-
+    public static int sum(int a, int b, int c) {
+return a+b+c;
     }
     public static void main(String[] args) {
-        System.out.println(Binomialcoefficient(3,2));
+        System.out.println(sum(2,5));
+        System.out.println(sum(2,3,4));
     }
 }
