@@ -124,17 +124,48 @@ import java.util.Scanner;
 
 // FUNCTION OVERLOADING using parameters
 // it means multiple functions have same name but different parameters.
+// public class function {
+
+//     public static int sum(int a, int b) {
+//         return a + b;
+//     }
+
+//     public static int sum(int a, int b, int c) {
+//         return a + b + c;
+//     }
+
+//     public static void main(String[] args) {
+//         System.out.println(sum(2, 5));
+//         System.out.println(sum(2, 3, 4));
+//     }
+// }
+
+// Prime number or not.
+
 public class function {
 
-    public static int sum(int a, int b) {
-        return a + b;
-    }
-
-    public static int sum(int a, int b, int c) {
-return a+b+c;
+    public static void prime(int n) {
+        if (n == 2) {
+            System.out.println("2 is always prime number");
+        } else {
+            boolean isprime = true;
+            for (int i = 2; i <= n-2 ; i++) {
+                if (n % i == 0){
+                    isprime = false;
+                }
+            }
+            if (isprime == true) {
+                System.out.println("number is prime");
+            } else {
+                System.out.println("not prime");
+            }
+        }
     }
     public static void main(String[] args) {
-        System.out.println(sum(2,5));
-        System.out.println(sum(2,3,4));
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a number");
+        int n =sc.nextInt();
+        prime(n);
     }
 }
+
