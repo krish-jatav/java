@@ -36,16 +36,32 @@ import java.util.*;
  /**
   * loops
   */
- public class loops {
+//  public class loops {
+
+//     public static void main(String[] args) {
+//         int n = 13;
+//         int sum = 0;
+//         int i =1;
+//         while (i<=n) {
+//             sum = sum +i;
+//             i++;
+//         }
+//         System.out.println(sum);
+//     }
+//  }
+
+ // FOR LOOP:-
+// for(initialisation;condition;updation){
+//      do something
+// }
+
+// Q.Print "helo world" 10 times using for loop.
+
+public class loops {
 
     public static void main(String[] args) {
-        int n = 13;
-        int sum = 0;
-        int i =1;
-        while (i<=n) {
-            sum = sum +i;
-            i++;
+        for(int i = 1 ; i <= 10; i++){
+            System.out.println(i+ " Hello, World");
         }
-        System.out.println(sum);
     }
- }
+}
