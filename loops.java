@@ -57,11 +57,25 @@ import java.util.*;
 
 // Q.Print "helo world" 10 times using for loop.
 
-public class loops {
+// public class loops {
 
-    public static void main(String[] args) {
-        for(int i = 1 ; i <= 10; i++){
-            System.out.println(i+ " Hello, World");
+//     public static void main(String[] args) {
+//         for(int i = 1 ; i <= 10; i++){
+//             System.out.println(i+ " Hello, World");
+//         }
+//     }
+// }
+
+// Print Reverse of a number.
+
+public class loops {
+        public static void main(String[] args) {
+           int n = 1537;
+           while (n>0) {
+            int lastDigit = n%10;
+            System.out.print(lastDigit);
+            n=n/10;
+           }
+        //    System.out.println();
         }
     }
-}
