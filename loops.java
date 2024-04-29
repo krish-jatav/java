@@ -68,14 +68,14 @@ import java.util.*;
 
 // Print Reverse of a number.
 
-public class loops {
-        public static void main(String[] args) {
-           int n = 1537;
-           while (n>0) {
-            int lastDigit = n%10;
-            System.out.print(lastDigit);
-            n=n/10;
-           }
-        //    System.out.println();
-        }
-    }
+// public class loops {
+//         public static void main(String[] args) {
+//            int n = 1537;
+//            while (n>0) {
+//             int lastDigit = n%10;
+//             System.out.print(lastDigit);
+//             n=n/10;
+//            }
+//         //    System.out.println();
+//         }
+//     }
