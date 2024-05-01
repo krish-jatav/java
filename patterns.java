@@ -100,23 +100,32 @@ import java.util.Scanner;
 // }
 // }
 
-//Solid rhombus  pattern
+// public class patterns {
 
-public class patterns {
+//     // Method to print a solid rhombus pattern
+//     public static void rhombus(int n) {
 
-    public static void rhombus(int n) {
+//         // Loop through each row
+//         for (int i = 1; i <= n; i++) {
 
-        for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <= n - i; j++) {
-                System.out.print(" ");
-            }
-            for(int j=1;j<=n;j++){
-                System.out.print("*");
-            }
-            System.out.println();
-        }
-    }
-    public static void main(String[] args) {
-        rhombus(4);
-    }
-}
+//             // Print spaces for left indentation
+//             for (int j = 1; j <= n - i; j++) {
+//                 System.out.print(" ");
+//             }
+
+//             // Print asterisks for each column
+//             for(int j = 1; j <= n; j++){
+//                 System.out.print("*");
+//             }
+
+//             // Move to the next line after each row
+//             System.out.println();
+//         }
+//     }
+
+//     // Main method
+//     public static void main(String[] args) {
+//         // Call the rhombus method with a size of 4
+//         rhombus(4);
+//     }
+// }
