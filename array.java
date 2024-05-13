@@ -1,5 +1,11 @@
 import java.util.*;
 
+// Array --- Arrays are used to store multiple values in a single variable
+// Operation in Array-- Create, input, Output, Update.
+//
+// Creating an Arrays- dataType arrayName[]= new dataType[size];
+
+
 // public class array {
 // public static void main(String[] args) {
 //     int[] marks = new int [3];
@@ -26,21 +32,21 @@ import java.util.*;
 //     }
 // }
 
-public class array {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int size = sc.nextInt();
-        int nums[] = new int[size];
-        
-        // input loop
-        for (int i = 0; i < size; i++) {
+// public class array {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int size = sc.nextInt();
+//         int nums[] = new int[size];
 
-            nums[i] = sc.nextInt();
-        }
-        // output loop
-        for (int i = 0; i < size; i++) {
-            System.out.println(nums[i]);
-        }
+//         // input loop
+//         for (int i = 0; i < size; i++) {
 
-    }
-}
+//             nums[i] = sc.nextInt();
+//         }
+//         // output loop
+//         for (int i = 0; i < size; i++) {
+//             System.out.println(nums[i]);
+//         }
+
+//     }
+// }
