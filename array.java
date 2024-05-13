@@ -4,7 +4,7 @@ import java.util.*;
 // Operation in Array-- Create, input, Output, Update.
 //
 // Creating an Arrays- dataType arrayName[]= new dataType[size];
-
+// new Keyword - ka kaam hai ki hame new memory location dene
 
 // public class array {
 // public static void main(String[] args) {
@@ -50,3 +50,29 @@ import java.util.*;
 
 //     }
 // }
+
+public class array {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your marks");
+        int marks[] = new int[100];
+
+        marks[0] = sc.nextInt(); // phy
+        marks[1] = sc.nextInt(); // chem
+        marks[2] = sc.nextInt();// maths
+
+        System.out.println("phy : " + marks[0]);
+        System.out.println("chem : " + marks[1]);
+        System.out.println("maths : " + marks[2]);
+
+        int sum = marks[0] + marks[1] + marks[2];
+
+        int percentage = (marks[0] + marks[1] + marks[2]) / 3;
+
+        System.out.println("Total :" + sum);
+        System.out.println("Percentage : " + percentage + "%");
+
+    }
+}
