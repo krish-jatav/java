@@ -131,23 +131,37 @@ import java.util.Scanner;
 // }
 //Numbers pyramid
 
+// public class pattern {
+// public static void numbers_pyramid(int n){
+//     //outer loop
+//     for (int i = 1; i <=n; i++) {
+//         //spaces
+//         for (int j = 1; j <=n-i; j++) {
+//             System.out.print(" ");
+//         }
+//         //numbers
+//         for (int j = 1; j <=i; j++) {
+//             System.out.print(i+" ");
+//         }
+//         System.out.println();
+//     }
+
+// }
+//     public static void main(String[] args) {
+//         numbers_pyramid(6);
+//     }
+// }
+
 public class pattern {
-public static void numbers_pyramid(int n){
-    //outer loop
-    for (int i = 1; i <=n; i++) {
-        //spaces
-        for (int j = 1; j <=n-i; j++) {
-            System.out.print(" ");
+
+    public static void main(String[] args) {
+        for(int i = 0; i<4; i++){
+            for (int j = 0; j<4; j++){
+                System.out.print("*");
+            }
+            System.out.println();
         }
-        //numbers
-        for (int j = 1; j <=i; j++) {
-            System.out.print(i+" ");
-        }
-        System.out.println();
+
     }
 
-}
-    public static void main(String[] args) {
-        numbers_pyramid(6);
-    }
 }
