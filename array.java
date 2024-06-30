@@ -80,16 +80,16 @@ import java.util.*;
 // QUE : find the largest no. of Array [1,3,2,4,1,6]
 
 
-public class array {
+// public class array {
 
-    public static void main(String[] args) {
-        int[] largest =  {1,3,6,9,2,5};
-        int arr =largest[0];
-        for (int i=0;i < largest.length;i++){
-            if(largest[i]> arr){
-                arr = largest[i];
-            }
-        }
-        System.out.println("The largest element in the array is: " + arr);
-    }
-}
+//     public static void main(String[] args) {
+//         int[] largest =  {1,3,6,9,2,5};
+//         int arr =largest[0];
+//         for (int i=0;i < largest.length;i++){
+//             if(largest[i]> arr){
+//                 arr = largest[i];
+//             }
+//         }
+//         System.out.println("The largest element in the array is: " + arr);
+//     }
+// }

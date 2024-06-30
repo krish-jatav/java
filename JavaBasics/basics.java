@@ -316,19 +316,19 @@ import java.util.Scanner;
 //     }
 //   }
 // }
-public class basics {
-  public static void main(String[] args) {
+// public class basics {
+//   public static void main(String[] args) {
 
-    Scanner sc = new Scanner(System.in);
-    System.out.println("Enter Your Age");
-    int Age = sc.nextInt();
-    if (Age>=18){
-      System.out.println("You are Adult ");
-    }else if(Age >= 13 && Age >= 17 ){
-      System.out.println("You are Teenager.");
-    }else{
-      System.out.println("You are Not Adult and Not Teenager");
-    }
+//     Scanner sc = new Scanner(System.in);
+//     System.out.println("Enter Your Age");
+//     int Age = sc.nextInt();
+//     if (Age>=18){
+//       System.out.println("You are Adult ");
+//     }else if(Age >= 13 && Age >= 17 ){
+//       System.out.println("You are Teenager.");
+//     }else{
+//       System.out.println("You are Not Adult and Not Teenager");
+//     }
 
-  }
-}
+//   }
+// }
