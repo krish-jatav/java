@@ -79,7 +79,6 @@ import java.util.*;
 
 // QUE : find the largest no. of Array [1,3,2,4,1,6]
 
-
 // public class array {
 
 //     public static void main(String[] args) {
@@ -110,7 +109,6 @@ import java.util.*;
 //     }
 // }
 
-
 // Linear Search
 
 // public class array {
@@ -138,42 +136,62 @@ import java.util.*;
 //                 System.out.println("key is at index : " + index );
 //             }
 
-
 //     }
 // }
 
 // Linear Search with string
 
+// public class array {
+
+//     public static int menuList(String[] menu, String key) {
+
+//         for (int i = 0; i < menu.length; i++) {
+
+//             if (menu[i] == key) {
+//                 return i;
+//             }
+
+//         }
+
+//         return -1;
+//     }
+
+//     public static void main(String[] args) {
+//         String menu[] = { "Samosa", "jalabi", "poha", "kachori" };
+//         String key = "poha";
+
+//         int result = menuList(menu, key);
+//         if (result == -1) {
+//             System.out.println("Not Found");
+//         } else {
+//             System.out.println("String is at index " + result);
+//         }
+
+//     }
+
+// }
+
+// LARGEST NUMBER IN ARRAY
+
 public class array {
 
-    public static int  menuList(String [] menu , String key) {
+    public static int getLargest(int num []) {
+        int largest = Integer.MIN_VALUE;  // - infinity
+        int small = Integer.MAX_VALUE; // + infinity
 
-        for(int i = 0; i<menu.length; i++){
-
-            if(menu[i] == key){
-                return i;
+        for(int i=0; i<num.length; i++){
+            if (largest<num[i]) {
+                largest = num[i];
+            }if(small > num[i]){
+                small = num [i];
             }
-
         }
-
-        return -1;
+ System.out.println("Small number is : " + small);
+      return largest;
     }
-
     public static void main(String[] args) {
-      String menu[] = {"Samosa", "jalabi","poha", "kachori"};
-      String key = "poha";
+        int num[] = {1,3,4,6,2,3};
+        System.out.println("The Largest Number is : " + getLargest(num));
 
-      int  result = menuList(menu, key);
-      if(result == -1 ){
-        System.out.println("Not Found");
-      }else{
-        System.out.println("String is at index " + result);
-      }
-
-
-
-     }
-
-
-
+    }
 }
