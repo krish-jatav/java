@@ -94,18 +94,50 @@ import java.util.*;
 //     }
 // }
 
+// public class array {
+//     public static void update(int marks[]) {
+//              for(int i=0; i<marks.length; i++){
+//                 marks[i]=marks[i] + 1;
+//              }
+//     }
+//     public static void main(String[] args) {
+//         int marks[] ={97,98,99};
+//         update(marks);
+//         for(int i=0; i<marks.length;i++){
+//             System.out.println(marks[i] + 1 + " ");
+//         }
+//         System.out.println();
+//     }
+// }
+
+
+// Linear Search
+
 public class array {
-    public static void update(int marks[]) {
-             for(int i=0; i<marks.length; i++){
-                marks[i]=marks[i] + 1;
-             }
-    }
-    public static void main(String[] args) {
-        int marks[] ={97,98,99};
-        update(marks);
-        for(int i=0; i<marks.length;i++){
-            System.out.println(marks[i] + 1 + " ");
+
+    public static int linearSearch( int num[] , int key) {
+
+       for(int i=0; i<num.length; i++){
+        if( num[i] == key){
+            return i;
         }
-        System.out.println();
+
+       }
+       return-1;
+
+    }
+
+        public static void main(String[] args) {
+
+            int num [] ={1,2,3,4,5,6,7,8};
+            int key = 7;
+            int index = linearSearch(num, key);
+            if(index==-1){
+                System.out.println("Not found");
+            }else{
+                System.out.println("key is at index : " + index );
+            }
+
+
     }
 }
