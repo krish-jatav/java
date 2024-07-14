@@ -113,31 +113,67 @@ import java.util.*;
 
 // Linear Search
 
+// public class array {
+
+//     public static int linearSearch( int num[] , int key) {
+
+//        for(int i=0; i<num.length; i++){
+//         if( num[i] == key){
+//             return i;
+//         }
+
+//        }
+//        return-1;
+
+//     }
+
+//         public static void main(String[] args) {
+
+//             int num [] ={1,2,3,4,5,6,7,8};
+//             int key = 10;
+//             int index = linearSearch(num, key);
+//             if(index==-1){
+//                 System.out.println("Number is Not found");
+//             }else{
+//                 System.out.println("key is at index : " + index );
+//             }
+
+
+//     }
+// }
+
+// Linear Search with string
+
 public class array {
 
-    public static int linearSearch( int num[] , int key) {
+    public static int  menuList(String [] menu , String key) {
 
-       for(int i=0; i<num.length; i++){
-        if( num[i] == key){
-            return i;
-        }
+        for(int i = 0; i<menu.length; i++){
 
-       }
-       return-1;
-
-    }
-
-        public static void main(String[] args) {
-
-            int num [] ={1,2,3,4,5,6,7,8};
-            int key = 7;
-            int index = linearSearch(num, key);
-            if(index==-1){
-                System.out.println("Not found");
-            }else{
-                System.out.println("key is at index : " + index );
+            if(menu[i] == key){
+                return i;
             }
 
+        }
 
+        return -1;
     }
+
+    public static void main(String[] args) {
+      String menu[] = {"Samosa", "jalabi","poha", "kachori"};
+      String key = "poha";
+
+      int  result = menuList(menu, key);
+      if(result == -1 ){
+        System.out.println("Not Found");
+      }else{
+        System.out.println("String is at index " + result);
+      }
+
+
+
+     }
+
+
+
 }
