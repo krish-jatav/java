@@ -173,25 +173,57 @@ import java.util.*;
 
 // LARGEST NUMBER IN ARRAY
 
+// public class array {
+
+//     public static int getLargest(int num []) {
+//         int largest = Integer.MIN_VALUE;  // - infinity
+//         int small = Integer.MAX_VALUE; // + infinity
+
+//         for(int i=0; i<num.length; i++){
+//             if (largest<num[i]) {
+//                 largest = num[i];
+//             }if(small > num[i]){
+//                 small = num [i];
+//             }
+//         }
+//  System.out.println("Small number is : " + small);
+//       return largest;
+//     }
+//     public static void main(String[] args) {
+//         int num[] = {1,3,4,6,2,3};
+//         System.out.println("The Largest Number is : " + getLargest(num));
+
+//     }
+// }
+
+// binary search-----
+
 public class array {
+public static int binarySearch(int number [] , int key) {
 
-    public static int getLargest(int num []) {
-        int largest = Integer.MIN_VALUE;  // - infinity
-        int small = Integer.MAX_VALUE; // + infinity
+    int start = 0, end = number.length-1;
 
-        for(int i=0; i<num.length; i++){
-            if (largest<num[i]) {
-                largest = num[i];
-            }if(small > num[i]){
-                small = num [i];
-            }
+    while (start <= end) {
+
+        int mid = (start + end)/2;
+
+        if(number[mid]==key){
+            return mid;
         }
- System.out.println("Small number is : " + small);
-      return largest;
-    }
-    public static void main(String[] args) {
-        int num[] = {1,3,4,6,2,3};
-        System.out.println("The Largest Number is : " + getLargest(num));
+        if(number[mid] < key){
+            start = mid+1;
+        }else{
+            end =mid-1;
+        }
 
+    }
+
+    return-1;
+
+}
+    public static void main(String[] args) {
+        int number[] = {2, 4, 6, 8, 9, 10};
+        int key = 6;
+        System.out.println("Index of key: " + binarySearch(number, key));
     }
 }
