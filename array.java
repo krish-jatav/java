@@ -198,32 +198,67 @@ import java.util.*;
 
 // binary search-----
 
+// public class array {
+// public static int binarySearch(int number [] , int key) {
+
+//     int start = 0, end = number.length-1;
+
+//     while (start <= end) {
+
+//         int mid = (start + end)/2;
+
+//         if(number[mid]==key){
+//             return mid;
+//         }
+//         if(number[mid] < key){
+//             start = mid+1;
+//         }else{
+//             end =mid-1;
+//         }
+
+//     }
+
+//     return-1;
+
+// }
+//     public static void main(String[] args) {
+//         int number[] = {2, 4, 6, 8, 9, 10};
+//         int key = 6;
+//         System.out.println("Index of key: " + binarySearch(number, key));
+//     }
+// }
+
+// reverse an array-------------
+
 public class array {
-public static int binarySearch(int number [] , int key) {
+public static void  reverseArray( int num[]) {
 
-    int start = 0, end = number.length-1;
+    int first = 0, last = num.length-1;
 
-    while (start <= end) {
+    while (first < last) {
 
-        int mid = (start + end)/2;
+        int temp = num[last];
+        num[last] = num[first];
+        num[first] = temp;
 
-        if(number[mid]==key){
-            return mid;
-        }
-        if(number[mid] < key){
-            start = mid+1;
-        }else{
-            end =mid-1;
-        }
+        first++;
+        last--;
 
     }
 
-    return-1;
-
 }
     public static void main(String[] args) {
-        int number[] = {2, 4, 6, 8, 9, 10};
-        int key = 6;
-        System.out.println("Index of key: " + binarySearch(number, key));
+
+        int num [] = {1,2,3,4,5,6};
+        reverseArray(num);
+
+        for(int i =0; i<num.length; i++){
+
+            System.out.println(num[i]);
+
+        }
+
+        System.out.println();
+
     }
 }
