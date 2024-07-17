@@ -230,35 +230,56 @@ import java.util.*;
 
 // reverse an array-------------
 
+//
+
+// public class array {
+
+//     public static boolean duplicate(int[] num) {
+
+//         for (int i=0; i<num.length-1; i++){
+//            for(int j=i+1; j<num.length; j++){
+//                if (num[i]== num[j]) {
+
+//                    return true;
+
+//                }
+//            }
+
+//         }
+//         return false;
+
+//        }
+
+//    public static void main(String[] args) {
+//         int num[] = {1, 2, 3, 1};
+//         boolean result = duplicate( num);
+//         System.out.println(result);
+
+//    }
+// }
+
 public class array {
-public static void  reverseArray( int num[]) {
 
-    int first = 0, last = num.length-1;
+    public static boolean duplicate(int[] num) {
 
-    while (first < last) {
+        for (int i=0; i<num.length-1; i++){
+           for(int j=i+1; j<num.length; j++){
+               if (num[i]== num[j]) {
 
-        int temp = num[last];
-        num[last] = num[first];
-        num[first] = temp;
+                   return true;
 
-        first++;
-        last--;
-
-    }
-
-}
-    public static void main(String[] args) {
-
-        int num [] = {1,2,3,4,5,6};
-        reverseArray(num);
-
-        for(int i =0; i<num.length; i++){
-
-            System.out.println(num[i]);
+               }
+           }
 
         }
+        return false;
 
-        System.out.println();
+       }
 
-    }
+   public static void main(String[] args) {
+        int num[] = {1, 4 , 5 , 10, 10 , 1};
+        boolean result = duplicate( num);
+        System.out.println(result);
+
+   }
 }
