@@ -1,6 +1,3 @@
-import java.util.*;
-
-// Array --- Arrays are used to store multiple values in a single variable
 // Operation in Array-- Create, input, Output, Update.
 //
 // Creating an Arrays- dataType arrayName[]= new dataType[size];
@@ -258,28 +255,46 @@ import java.util.*;
 //    }
 // }
 
-public class array {
+// public class array {
 
-    public static boolean duplicate(int[] num) {
+//     public static boolean duplicate(int[] num) {
 
-        for (int i=0; i<num.length-1; i++){
-           for(int j=i+1; j<num.length; j++){
-               if (num[i]== num[j]) {
+//         for (int i=0; i<num.length-1; i++){
+//            for(int j=i+1; j<num.length; j++){
+//                if (num[i]== num[j]) {
 
-                   return true;
+//                    return true;
 
-               }
-           }
+//                }
+//            }
 
-        }
-        return false;
+//         }
+//         return false;
 
-       }
+//        }
 
-   public static void main(String[] args) {
-        int num[] = {1, 4 , 5 , 10, 10 , 1};
-        boolean result = duplicate( num);
-        System.out.println(result);
+//    public static void main(String[] args) {
+//         int num[] = {1, 4 , 5 , 10, 10 , 1};
+//         boolean result = duplicate( num);
+//         System.out.println(result);
 
-   }
+//    }
+// }
+
+ public class array{
+    public static void update(int marks[]) {
+for(int i =0; i < marks.length; i++){
+    marks[i] = marks[i] + 1;
 }
+
+        
+    }
+    public static void main(String[] args) {
+        int marks[] ={98, 60, 90};
+        update(marks);
+        for (int i = 0; i < marks.length; i++) {
+            System.out.println(marks[i]+" ") ;
+        }
+System.out.println();
+    }
+ }
