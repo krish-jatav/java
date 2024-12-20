@@ -281,20 +281,92 @@
 //    }
 // }
 
- public class array{
-    public static void update(int marks[]) {
-for(int i =0; i < marks.length; i++){
-    marks[i] = marks[i] + 1;
-}
+//  public class array{
+//     public static void update(int marks[]) {
+// for(int i =0; i < marks.length; i++){
+//     marks[i] = marks[i] + 1;
+// }
 
         
-    }
-    public static void main(String[] args) {
-        int marks[] ={98, 60, 90};
-        update(marks);
-        for (int i = 0; i < marks.length; i++) {
-            System.out.println(marks[i]+" ") ;
+//     }
+//     public static void main(String[] args) {
+//         int marks[] ={98, 60, 90};
+//         update(marks);
+//         for (int i = 0; i < marks.length; i++) {
+//             System.out.println(marks[i]+" ") ;
+//         }
+// System.out.println();
+//     }
+//  }
+
+// public class array{
+//     public static int linearSearch(int numbers [], int key) {
+//         for (int i = 0; i < numbers.length ; i++) {
+//            if(numbers [i] == key) {
+//             return i ;
+//            } 
+            
+//         }
+//         return -1;
+//     }
+//     public static void main(String[] args) {
+//         int numbers [] = {2,4,6,8,10,12};
+//         int key = 10;
+//         int index = linearSearch(numbers, key);
+//         if (index == -1) {
+//             System.out.println("not a num");
+//         } else {
+//             System.out.println("key is a index : "+ index);
+//         }
+//     }
+// }
+
+
+// find the largest number in this array..............................
+
+// public class array{
+//     public static int largestNum(int number[]) {
+
+//         int largest = Integer.MIN_VALUE;
+
+//         for (int i = 0; i < number.length; i++) {
+//             if(largest < number[i]){
+//                 largest = number[i];
+//             }
+//         }
+//         return largest;
+//     }
+//     public static void main(String[] args) {
+//         int numbers [] = {2,3,7,5,6};
+//         System.out.println("the largest number is " + largestNum(numbers));
+//     }
+// }
+
+// public class array {
+
+    public static int  getlargest(int  number []){
+        
+        int largest = Integer.MIN_VALUE;
+
+        for(int i = 0 ; i < number.length; i++){
+            if(largest < number[i]){
+                largest = number[i];
+            }
         }
-System.out.println();
+        return  largest;
     }
- }
+public static int getsmallest(int number []) {
+    int smallest = Integer.MAX_VALUE;
+    for (int i = 0; i < number.length; i++) {
+        if(smallest > number[i]){
+            smallest = number[i];
+        }
+    }
+    return smallest;
+}
+    public static void main(String[] args) {
+        int  numbers [] = { 2,4,5,3,9,5};
+        System.out.println("the largest number is "+ getlargest(numbers));
+        System.out.println("the smallest number is "+ getsmallest(numbers));
+    }
+}
