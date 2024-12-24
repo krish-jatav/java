@@ -298,22 +298,65 @@
 //         }
 //     }
 // }
+// public class array {
+//     public static void Pair(int numbers[]) {
+//         int tp = 0;
+//         for (int i = 0; i < numbers.length; i++) {
+//             // int curr = numbers[i]; 2, 4, 5, 7, 8, 8, 9, 9
+//             for (int j = i + 1; j < numbers.length; j++) {
+//                 System.out.print("(" + numbers[i] + "," + numbers[j] + ")");
+//                 tp++;
+//             }
+//             System.out.println();
+//         }
+//         System.out.println("total numbers of pair = "+ tp);
+//     }
+//     public static void main(String[] args) {
+//         int numbers[] = {2, 4, 5, 7, 8, };
+//         Pair(numbers);
+//     }
+// }
 public class array {
 
-    public static void Pair(int numbers[]) {
+    // Method to print all subarrays of the given array
+    public static void printSubArray(int numbers[]) {
+        int ts = 0; // Total subarrays counter
+
+        // Loop to set the starting point of subarray
         for (int i = 0; i < numbers.length; i++) {
-            int curr = numbers[i];
-            for (int j = i + 1; j < numbers.length; j++) {
+            int start = i;
+            
+            // Loop to set the ending point of subarray
+            for (int j = i; j < numbers.length; j++) {
+                int end = j;
+                int min = Integer.MAX_VALUE;
+                int max = Integer.MIN_VALUE;
+                int currentSum = 0;
 
-                System.out.println("(" + curr + "," + numbers[j] + ")");
-
+                // Loop to print elements from start to end
+                for (int k = start; k <= end; k++) {
+                    currentSum += numbers[k];
+                    if (min > numbers[k]) {
+                        min = numbers[k];
+                    }
+                    if (max < numbers[k]) {
+                        max = numbers[k];
+                    }
+                }
+                System.out.println("Subarray from index " + start + " to " + end);
+                System.out.println("Current sum: " + currentSum);
+                System.out.println("Min: " + min + " Max: " + max);
+                System.out.println();
+                ts++; // Increment total subarrays counter
             }
-            System.out.println();
         }
+        // Print total number of subarrays
+        System.out.println("Total SubArrays: " + ts);
     }
 
     public static void main(String[] args) {
-        int numbers[] = {2, 4, 5, 7, 8, 8, 9, 9};
-        Pair(numbers);
+        int numbers[] = {2, 4, 6, 8, 10}; // Initialize the array
+
+        printSubArray(numbers); // Call method to print subarrays
     }
 }
